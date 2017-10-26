@@ -49,6 +49,9 @@ set ambiwidth=double
 "バックスペースキーで行頭を削除する
 set backspace=indent,eol,start
 
+"deleteを押すと^?になってしまう所の修正
+noremap! ^? ^H
+
 "カッコを閉じたとき対応するカッコに一時的に移動
 set nostartofline
 
