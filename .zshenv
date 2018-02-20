@@ -28,9 +28,11 @@ function pcolor() {
     done
     echo
 }
+source /usr/local/bin/virtualenvwrapper.sh
+export WORKON_HOME=~/.virtualenvs
 
 #ls
-export PATH="/usr/local/bin:$PATH:/usr/local/sbin"
+export PATH="/usr/local/bin:$PATH:/usr/local/bin"
 export TERM=xterm-color
 alias l='ls -G'
 alias ll='ls -hl'
@@ -38,4 +40,4 @@ alias emacs='emacs -nw'
 alias rmdir='rm -r'
 alias chrome='open //Applications/Google\ Chrome.app/'
 alias newchro='//Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
-alias mail='//Applicartion/Mail.app
+alias mail='//Applicartion/Mail.app'

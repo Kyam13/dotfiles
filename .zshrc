@@ -38,7 +38,12 @@ eval "$(pyenv init -)"
 export ATOM_NODE_URL=http://gh-contractor-zcbenz.s3.amazonaws.com/atom-shell/dist
 
 #you-get
-#antigen bundle soimort/you-get
+#aantigen bundle soimort/you-get
+
+fpath=(~/.zsh/completion $fpath)
+
+autoload -U compinit
+compinit -u
 
 #jupyter notebook not open
 export BROWSER=/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
